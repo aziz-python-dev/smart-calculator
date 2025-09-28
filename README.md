@@ -27,6 +27,5 @@ python calculator_monolith.py
 
 
 ### Версия 2.0 (рекомендуется):
-```bash
 cd version_02
 python main.py

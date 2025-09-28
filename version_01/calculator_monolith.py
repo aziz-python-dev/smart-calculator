@@ -1,4 +1,3 @@
-import pickle
 
 def main():  
     show_info()

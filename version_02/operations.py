@@ -1,6 +1,7 @@
+from typing import List, Union
 # Этот модуль хранит операции над числами.
 
-def sum_up(numbers):
+def sum_up(numbers: List[Union[int, float]]) -> str:
     """Функция sum_up возвращает сумму чисел."""
     result = 0
     if len(numbers) == 2:
@@ -13,7 +14,7 @@ def sum_up(numbers):
     
     return result
 
-def subtract(numbers):
+def subtract(numbers: List[Union[int, float]]) -> str:
     """Функция subtract возвращает разность чисел."""
     if len(numbers) == 2:
         result = numbers[0] - numbers[1]
@@ -26,7 +27,7 @@ def subtract(numbers):
        
     return result
     
-def multiply(numbers):
+def multiply(numbers: List[Union[int, float]]) -> str:
     """Функция multiply возвращает произведение чисел."""
     result = 1
     if len(numbers) == 2:
@@ -39,7 +40,7 @@ def multiply(numbers):
         
     return result
 
-def divide(numbers):
+def divide(numbers: List[Union[int, float]]) -> str:
     """ Функция divide возвращает частное двух чисел."""
     try:
         result = numbers[0]/numbers[1]
@@ -49,7 +50,7 @@ def divide(numbers):
         
     return result
 
-def raise_power(numbers):
+def raise_power(numbers: List[Union[int, float]]) -> str:
     """Функция raise_power возвращает степень для двух чисел."""
     if len(numbers) == 2:
         result = pow(numbers[0], numbers[1])
